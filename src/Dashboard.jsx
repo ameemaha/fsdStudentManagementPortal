@@ -1,9 +1,5 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import CanvasJSReact from "@canvasjs/react-charts";
-
-var CanvasJS = CanvasJSReact.CanvasJS;
-var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 const Dashboard = () => {
   const students = useSelector((state) => state.students);
@@ -18,12 +14,7 @@ const Dashboard = () => {
 
   /* print out the results */
   console.log(countedHash);
-  let data = "";
-  for (var key in countedHash) {
-    //alert("User " + key + " is #" + countedHash[key]); // "User john is #234"
-    //data += { label: `{key}`, y: countedHash[key] };
-  }
-  const count = 10;
+
   return (
     <div className="container">
       <div className="row mt-3">
